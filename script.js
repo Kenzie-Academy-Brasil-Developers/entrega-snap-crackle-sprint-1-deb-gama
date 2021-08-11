@@ -14,8 +14,18 @@ function multiploDeCinco(num){
 }      
 
 function ehPrimo(num){
- 
-}
+    divisores = [];
+  
+    for(let i = 1; i <= num; i++){
+      if (num % i === 0){
+        divisores.push(i)
+      }
+      if(divisores.length > 2){
+        return false;
+      }
+    }
+    return true;
+  }
 
 
 
